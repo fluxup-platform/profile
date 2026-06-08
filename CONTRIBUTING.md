@@ -91,4 +91,4 @@ AFFECT TASK: #99
 
 ## 6. Follow the Repository Guidelines
 
-Read and follow [`CLAUDE.md`](CLAUDE.md) before contributing. It covers architecture, code patterns, naming conventions, and commit format specific to this repository.
+Read and follow the contribution guidelines in this file before contributing. For questions about architecture, code patterns, or naming conventions, open a [discussion](https://github.com/fluxup-platform/profile/discussions).
