@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write        # tags, GitHub Release, CHANGELOG commit
+  issues: write          # semantic-release issue comments
+  pull-requests: write   # semantic-release PR comments
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Semantic Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+
+      - name: Install semantic-release
+        run: npm install -g semantic-release@24.2.5 @semantic-release/git@10.0.1 @semantic-release/changelog@6.0.3 @semantic-release/github@10.3.5 conventional-changelog-conventionalcommits@8
+
+      - name: Semantic Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: semantic-release
