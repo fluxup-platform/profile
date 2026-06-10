@@ -18,6 +18,12 @@ Times ágeis frequentemente perdem visibilidade sobre o andamento real das deman
 
 ---
 
+## Documentação
+
+📖 [Acesse a Wiki do projeto](https://github.com/fluxup-platform/profile/wiki) para guias, arquitetura e referências técnicas.
+
+---
+
 ## Discussões
 
 Tem uma ideia, encontrou um bug ou quer sugerir uma melhoria?
