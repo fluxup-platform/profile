@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/fluxup-platform/profile/compare/v1.0.0...v1.0.1) (2026-06-10)
+
+### 📝 Documentation
+
+* **readme:** add wiki reference link ([25a482d](https://github.com/fluxup-platform/profile/commit/25a482d310fe4dc67ce9b9419098a8bff906f923))
+
 ## 1.0.0 (2026-06-08)
 
 ### 📝 Documentation
